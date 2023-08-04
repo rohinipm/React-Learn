@@ -4,15 +4,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Car from "./components/Car";
+import Garage from "./components/Garage";
 
-function Garage() {
-  return (
-    <>
-      <h1>who lives in my garage?</h1>
-      <Car />
-    </>
-  );
-}
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
