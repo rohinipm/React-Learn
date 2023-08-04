@@ -1,5 +1,7 @@
-function Car() {
-  return <h2>Hiii, I am a car</h2>;
+function Car(props) {
+  const { brand } = props;
+  const text = `Hi I am a ${brand} car`;
+  return <h2>{text}</h2>;
 }
 
 export default Car;
