@@ -3,10 +3,11 @@ import Apple from "./Apple";
 
 function Garage() {
   const brand = "ford";
+  //const color = "red";
   return (
     <>
       <h1>who lives in my garage???</h1>
-      <Car brand={brand} />
+      <Car brand={brand} color={"black"} />
       <Apple />
     </>
   );
