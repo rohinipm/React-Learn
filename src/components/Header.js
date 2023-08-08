@@ -1,4 +1,5 @@
 import "./Header.css";
+import styles from "./Header.module.css";
 
 function Header() {
   const myStyle = {
@@ -10,7 +11,8 @@ function Header() {
 
   return (
     <>
-      <h1 style={myStyle}> Hello styling</h1>
+      {/* <h1 style={myStyle}> Hello styling</h1> */}
+      <h1 className={styles.bigBlue}>Hello styling</h1>
       <p>Add some style</p>
     </>
   );
