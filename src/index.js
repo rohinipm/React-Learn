@@ -4,6 +4,7 @@ import "./index.css";
 //import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import FavoriteColor from "./components1/FavoriteColor";
+import Car1 from "./components1/Car1";
 //import Garage from "./components/Garage";
 //import Header from "./components/Header";
 
@@ -13,6 +14,7 @@ root.render(
     {/* <Garage /> */}
     {/* <Header /> */}
     <FavoriteColor />
+    <Car1 />
   </React.StrictMode>
 );
 
