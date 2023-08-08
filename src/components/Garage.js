@@ -20,6 +20,8 @@ function Garage() {
     { brand: "RR", color: "Orange" },
   ];
 
+  const numberList = [1, 2, 2, 3, 4];
+
   return (
     <>
       <h1>who lives in my garage???</h1>
@@ -38,9 +40,14 @@ function Garage() {
 
       <ul>
         {carList.map((carInfo) => (
-          <li>
+          <li key={carInfo.brand}>
             <Car carInfo={carInfo} />
           </li>
+        ))}
+      </ul>
+      <ul>
+        {numberList.map((e, index) => (
+          <p key={index}>{e}</p>
         ))}
       </ul>
     </>
