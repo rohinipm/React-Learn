@@ -1,3 +1,4 @@
+import { buildQueries } from "@testing-library/react";
 import { useState } from "react";
 
 function Scooter() {
@@ -13,6 +14,12 @@ function Scooter() {
     year: "2020",
   });
 
+  function updateColor() {
+    setScooter((previousState) => {
+      return { ...previousState, color: "Blue" };
+    });
+  }
+  console.log("Current State:", scooter);
   return (
     <>
       <h1>My Scooter</h1>
@@ -20,6 +27,7 @@ function Scooter() {
       <p>Brand: {scooter.brand}</p>
       <p>Model: {scooter.model}</p>
       <p>Year: {scooter.year}</p>
+      <button onClick={updateColor}>Change Color</button>
     </>
   );
 }
