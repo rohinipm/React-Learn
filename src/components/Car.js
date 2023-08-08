@@ -1,7 +1,7 @@
 function Car(props) {
   //const { brand, color } = props;
   const { carInfo } = props;
-  const { color, brand } = carInfo;
+  const { brand, color } = carInfo;
 
   const text = `Hi I am a ${color} ${brand} car`;
 
