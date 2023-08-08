@@ -5,6 +5,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import FavoriteColor from "./components1/FavoriteColor";
 import Car1 from "./components1/Car1";
+import Scooter from "./components1/Scooter";
 //import Garage from "./components/Garage";
 //import Header from "./components/Header";
 
@@ -15,6 +16,7 @@ root.render(
     {/* <Header /> */}
     <FavoriteColor />
     <Car1 />
+    <Scooter />
   </React.StrictMode>
 );
 
