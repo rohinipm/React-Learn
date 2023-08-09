@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 //import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import FavoriteColor from "./components1/FavoriteColor";
-import Car1 from "./components1/Car1";
-import Scooter from "./components1/Scooter";
-import List from "./components1/List";
-import Timer from "./components1/Timer";
+import MyForm from "./components2/MyForm";
+// import FavoriteColor from "./components1/FavoriteColor";
+// import Car1 from "./components1/Car1";
+// import Scooter from "./components1/Scooter";
+// import List from "./components1/List";
+// import Timer from "./components1/Timer";
 //import Garage from "./components/Garage";
 //import Header from "./components/Header";
 
@@ -16,11 +17,13 @@ root.render(
   <React.StrictMode>
     {/* <Garage /> */}
     {/* <Header /> */}
-    <FavoriteColor />
+    {/* <FavoriteColor />
     <Car1 />
     <Scooter />
     <List></List>
-    <Timer />
+    <Timer /> */}
+
+    <MyForm />
   </React.StrictMode>
 );
 

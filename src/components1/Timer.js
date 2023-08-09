@@ -5,8 +5,8 @@ function Timer() {
 
   useEffect((previousState) => {
     console.log("Screen Rendered");
-    //setCount(1);
-    //checkCount();
+    setCount(1);
+    checkCount();
     // setTimeout(() => {
     //   setCount((previousState) => {
     //     return previousState + 1;
