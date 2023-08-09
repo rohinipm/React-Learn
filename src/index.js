@@ -7,6 +7,7 @@ import FavoriteColor from "./components1/FavoriteColor";
 import Car1 from "./components1/Car1";
 import Scooter from "./components1/Scooter";
 import List from "./components1/List";
+import Timer from "./components1/Timer";
 //import Garage from "./components/Garage";
 //import Header from "./components/Header";
 
@@ -19,6 +20,7 @@ root.render(
     <Car1 />
     <Scooter />
     <List></List>
+    <Timer />
   </React.StrictMode>
 );
 

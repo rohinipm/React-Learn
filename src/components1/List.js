@@ -12,7 +12,7 @@ function List() {
     setCount((previousState) => {
       return previousState + 1;
     });
-    console.log("current state" + list);
+    console.log("current state", list);
   }
   return (
     <>
