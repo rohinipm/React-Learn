@@ -1,14 +1,17 @@
 import { useState } from "react";
 
 function MyForm() {
-  const [name, setName] = useState("");
-  const [age, setAge] = useState("");
-  const [email, setEmail] = useState("");
+  //   const [name, setName] = useState("");
+  //   const [age, setAge] = useState("");
+  //   const [email, setEmail] = useState("");
   // console.log("current state", name);
+
+  const [inputs, setInputs] = useState("");
+
   function handleSubmit(e) {
     e.preventDefault();
     console.log("Form Submitted");
-    console.log("Current state", name, age, email);
+    console.log("Current state", inputs);
   }
   return (
     <form onSubmit={handleSubmit}>
@@ -17,7 +20,9 @@ function MyForm() {
         <input
           type="text"
           onChange={(e) => {
-            setName(e.target.value);
+            setInputs((previousState) => {
+              return { ...previousState, name: e.target.value };
+            });
           }}
         />
       </label>
@@ -27,7 +32,9 @@ function MyForm() {
         <input
           type="text"
           onChange={(e) => {
-            setAge(e.target.value);
+            setInputs((previousState) => {
+              return { ...previousState, age: e.target.value };
+            });
           }}
         />
       </label>
@@ -37,7 +44,9 @@ function MyForm() {
         <input
           type="text"
           onChange={(e) => {
-            setEmail(e.target.value);
+            setInputs((previousState) => {
+              return { ...previousState, email: e.target.value };
+            });
           }}
         />
       </label>
