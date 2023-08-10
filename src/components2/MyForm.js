@@ -2,11 +2,13 @@ import { useState } from "react";
 
 function MyForm() {
   const [name, setName] = useState("");
-  console.log("current state", name);
+  const [age, setAge] = useState("");
+  const [email, setEmail] = useState("");
+  // console.log("current state", name);
   function handleSubmit(e) {
     e.preventDefault();
     console.log("Form Submitted");
-    console.log("Current state", name);
+    console.log("Current state", name, age, email);
   }
   return (
     <form onSubmit={handleSubmit}>
@@ -19,6 +21,27 @@ function MyForm() {
           }}
         />
       </label>
+      <br />
+      <label>
+        Enter Your Age:{" "}
+        <input
+          type="text"
+          onChange={(e) => {
+            setAge(e.target.value);
+          }}
+        />
+      </label>
+      <br />
+      <label>
+        Enter Your Email:{" "}
+        <input
+          type="text"
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+        />
+      </label>
+      <br />
       <input type="submit" value="Submit From" />;
     </form>
   );
