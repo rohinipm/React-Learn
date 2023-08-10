@@ -6,7 +6,11 @@ function MyForm() {
   //   const [email, setEmail] = useState("");
   // console.log("current state", name);
 
-  const [inputs, setInputs] = useState({ phone: "+91", email: "@gmail.com" });
+  const [inputs, setInputs] = useState({
+    phone: "+91",
+    email: "@gmail.com",
+    about: "Enter something",
+  });
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -53,6 +57,24 @@ function MyForm() {
         />
       </label>
       <br />
+      <label>
+        Enter Your country:
+        <select name="country" onChange={handleChange} value={inputs.country}>
+          <option>select</option>
+          <option>Australia</option>
+          <option>India</option>
+          <option>United Status</option>
+        </select>
+      </label>
+      <br />
+      <label>
+        Enter about yourself:
+        <textarea
+          name="about"
+          value={inputs.about}
+          onChange={handleChange}
+        ></textarea>
+      </label>
       <input type="submit" value="Submit From" />
     </form>
   );
