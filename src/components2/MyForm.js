@@ -3,8 +3,13 @@ import { useState } from "react";
 function MyForm() {
   const [name, setName] = useState("");
   console.log("current state", name);
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log("Form Submitted");
+    console.log("Current state", name);
+  }
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <label>
         Enter Your Name:{" "}
         <input
@@ -14,6 +19,7 @@ function MyForm() {
           }}
         />
       </label>
+      <input type="submit" value="Submit From" />;
     </form>
   );
 }
